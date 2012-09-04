@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.thesouthisland.android.callblocker"
+      android:versionCode="11"
+      android:versionName="1.4.6">
+
+	<uses-sdk android:minSdkVersion="7" 
+	          android:targetSdkVersion="10"/>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.MODIFY_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.CALL_PHONE"/>
+	<uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <activity android:name="CallBlockList"
+                  android:label="@string/app_name"
+                  android:theme="@android:style/Theme.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="AddContact"
+			android:theme="@android:style/Theme.NoTitleBar"
+			android:screenOrientation="portrait"></activity>
+        <activity android:name="Settings"
+       		android:theme="@android:style/Theme.NoTitleBar"></activity>
+        <activity android:name="EditContact"
+        	android:theme="@android:style/Theme.NoTitleBar"
+        	android:screenOrientation="portrait"></activity>
+    	<activity android:name="About"
+        	android:theme="@android:style/Theme.NoTitleBar"></activity>
+
+        <receiver android:name="PhoneIntentReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PHONE_STATE" />
+            </intent-filter>
+        </receiver>
+        
+
+    </application>
+
+</manifest>

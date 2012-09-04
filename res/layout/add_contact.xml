@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="@color/white"
+  	android:textColor="@color/black">
+
+	<com.markupartist.android.widget.ActionBar
+    android:id="@+id/actionbar"
+    style="@style/ActionBar"
+    />
+
+	<LinearLayout
+		android:id="@+id/buttonBar"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true">
+	
+		<Button 
+			android:id="@+id/confirmButton" 
+		  	android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:layout_margin="@dimen/contactblocker_margin"
+			android:text="@string/labelConfirm"
+			android:background="@drawable/contactblocker_btn"/>
+			
+		<Button 
+			android:id="@+id/cancel"  	
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"			
+			android:layout_toLeftOf="@id/confirmButton"
+			android:layout_weight="1"
+			android:layout_margin="@dimen/contactblocker_margin"
+			android:text="@string/labelCancel"
+			android:background="@drawable/contactblocker_btn"/>	
+		
+	</LinearLayout>
+
+	<EditText android:id="@+id/addNameText" 
+	  	android:layout_width="fill_parent"
+		android:layout_height="@dimen/sliding_drawer_height"
+		android:layout_below="@id/actionbar"
+		android:focusable="false"
+		android:inputType="none"
+		android:text="@string/labelDefaultName"
+		android:textColor="@color/contactblocker_gray"
+		android:textSize="16sp"
+		android:padding="@dimen/contactblocker_padding"
+		android:layout_margin="@dimen/contactblocker_margin"
+		android:background="@drawable/contactblocker_txt_box"/>
+		
+	<ImageView
+		android:id="@+id/addNameArrow"
+		android:layout_height="@dimen/arrow_dimen"
+		android:layout_width="@dimen/arrow_dimen"
+		android:layout_below="@id/actionbar"
+		android:layout_alignParentRight="true"
+		android:layout_margin="13dp"
+		android:src="@drawable/ic_arrow_circle"/>	
+
+
+	<ScrollView android:id="@+id/scroll_view"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:layout_below="@id/addNameText" 
+		android:layout_above="@id/buttonBar">
+
+
+		<RelativeLayout
+			android:orientation="vertical" 
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+		  	android:textColor="@color/black">
+
+			<TextView 
+				android:id="@+id/days_of_week_label"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textSize="14sp"
+				android:paddingLeft="3pt"
+				android:paddingTop="5pt"
+				android:textColor="@color/contactblocker_dark_red"
+				android:textStyle="bold"
+				android:text="@string/days_of_week"/>
+
+			<Button
+				android:id="@+id/buttonDaysOfTheWeek"
+				android:checked="true"
+				android:text="@string/labelAlwaysBlock"
+				android:layout_height="@dimen/sliding_drawer_height"
+				android:layout_width="fill_parent" 
+				android:layout_below="@id/days_of_week_label"
+				android:textSize="16sp"
+				android:padding="@dimen/contactblocker_padding"
+				android:textColor="@color/black"
+				android:gravity="left|center"
+				android:background="@drawable/contactblocker_pref_btn"
+				android:layout_margin="@dimen/contactblocker_margin"/>
+			
+			<ImageView
+				android:id="@+id/daysOfWeekArrow"
+				android:layout_height="@dimen/arrow_dimen"
+				android:layout_width="@dimen/arrow_dimen"
+				android:layout_below="@id/actionbar"
+				android:layout_alignParentRight="true"
+				android:layout_alignTop="@id/buttonDaysOfTheWeek"
+				android:layout_margin="11dp"
+				android:src="@drawable/ic_arrow"/>	
+														
+		</RelativeLayout>
+
+	</ScrollView>	
+
+</RelativeLayout>

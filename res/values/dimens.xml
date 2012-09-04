@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright (C) 2011 The South Island
+-->
+<resources>
+    <dimen name="sliding_drawer_height">45dip</dimen>
+    <dimen name="contact_badge_height">45dip</dimen>
+    <dimen name="contactblocker_margin">4dip</dimen>
+    <dimen name="arrow_dimen">25dip</dimen>
+    <dimen name="contactblocker_padding">8dip</dimen>
+</resources>

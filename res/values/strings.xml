@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Contact Blocker</string>
+    <string name="no_blocked_contacts">No Blocked Contacts</string>
+ 	<string name="name">Block:</string>
+ 	<!-- <string name="labelDefaultName">Click here to select a contact</string>
+ 	 -->
+ 	 <string name="labelDefaultName">Who do you want to block?</string>
+ 	 <string name="labelAlwaysBlock">Always Block</string>
+ 	
+ 	<string name="labelMonday">Monday</string>
+ 	<string name="labelTuesday">Tuesday</string>
+ 	<string name="labelWednesday">Wednesday</string>
+ 	<string name="labelThursday">Thursday</string>
+ 	<string name="labelFriday">Friday</string>
+ 	<string name="labelSaturday">Saturday</string>
+ 	<string name="labelSunday">Sunday</string>
+ 	<string name="labelEveryday">Everyday</string>
+ 	<string name="labelNoDaysSelected">No days selected</string>
+ 	<string name="labelClearHistory">Clear history</string>
+ 	<string name="labelHistoryCleared">History cleared</string>
+ 	
+ 	<string name="titleSupport">Support Email:</string>
+ 	<string name="titleDisclaimer">Disclaimer:</string>
+ 	<string name="titleCopyright">Copyright:</string>
+ 	<string name="titleVersion">Version:</string>
+ 	
+ 	<string name="labelAbout">About</string>
+ 	<string name="labelConfirm">Confirm</string>
+  	<string name="labelCancel">Cancel</string>
+ 
+ 	<string name="labelNumber">Number</string>
+ 	<string name="labelSlidingDrawerHandle">Blocked Calls</string>
+ 	
+ 	<string name="update">Update</string>
+ 	<string name="addcontact">Add Contact</string>
+ 	<string name="editcontact">Edit Contact</string>
+ 	<string name="menu_delete">Remove Contact</string>
+ 	<string name="block_options">Block Options</string>
+ 	<string name="days_of_week">Block calls on the following days:</string>
+ 	
+ 	
+ 	<string name="email">thesouthisland@gmail.com</string>
+ 	<string name="version">1.4.6</string>
+ 	<string name="applicationDescription">This application is used to block calls 
+ 	of people in your contact list. By adding contacts from your contact list to 
+ 	the block list, any calls made by these contacts to you will be automatically 
+ 	disconnected. It is also possible to select which particular days of the week 
+ 	you wish to block these contacts.</string>
+ 	
+ 	<string name="disclaimerText">
+ 	This application is provided \'as is\' and solely intended for personal use.
+ 	
+ 	\n\nThe South Island shall use its best endeavor to guarantee the fitness of the software; however, it 
+ 	makes no warranties for all failures encountered in using the software.
+ 	
+ 	\n\nThe South Island cannot guarantee the calls by any contact added to the block list will always be 
+ 	blocked correctly, or that the application will correctly block intended contacts. The South Island 
+ 	is not liable for any errors, incompleteness, or delays, or for any actions taken in reliance on 
+ 	calls which are either blocked or not blocked by this application.</string>
+ 	
+ 	<string name="copyRightText">Copyright(C) 2010-2012 The South Island. All Rights Reserved.</string>
+ 	
+ 	<string name="msgAlreadyBlocked">This contact has already been blocked</string>
+ 	<string name="msgEverydayUnchecked">No days have been selected</string>
+	<string name="msgNoContactSelected">No contact has been selected</string>
+	<string name="msgContactHasNoNumbers">This contact does not have a phone number</string>
+	<string name="msgContactUpdated">Contact updated</string>
+</resources>

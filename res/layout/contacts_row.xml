@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" 
+	android:layout_height="fill_parent">
+
+	<TableRow android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:orientation="horizontal"
+		android:paddingLeft="2pt"
+		android:paddingTop="4pt"
+		android:paddingBottom="4pt"
+		android:paddingRight="1pt">
+
+		<RelativeLayout
+			android:id="@+id/contact_details"
+			android:layout_width="wrap_content"
+			android:layout_height="fill_parent"
+			android:layout_weight="1">
+				
+				<QuickContactBadge 
+					android:id="@+id/quickContactBadge"
+					android:layout_width="@dimen/contact_badge_height"
+					android:layout_height="@dimen/contact_badge_height"
+					android:src="@drawable/icon_watermark"/>
+				
+				<TextView android:id="@+id/nameLabel" 
+				    android:textSize="20sp"
+			       	android:textColor="@color/black"
+			       	android:layout_width="fill_parent"
+			       	android:layout_height="wrap_content"
+			       	android:layout_toRightOf="@id/quickContactBadge"
+			       	android:paddingLeft="@dimen/contactblocker_padding"
+				    />
+				
+				<LinearLayout
+					android:orientation="horizontal"
+					android:layout_width="fill_parent"
+					android:layout_height="fill_parent"
+					android:layout_below="@id/nameLabel"
+					android:layout_toRightOf="@id/quickContactBadge"
+					android:paddingLeft="3pt">
+					<TextView android:id="@+id/mondayLabel" 
+					    android:textSize="12sp"
+				       	android:textColor="@color/contactblocker_gray"
+				       	android:layout_width="wrap_content"
+				       	android:layout_height="wrap_content"/>
+					<TextView android:id="@+id/tuesdayLabel" 
+					    android:textSize="12sp"
+				       	android:textColor="@color/contactblocker_gray"
+				       	android:layout_width="wrap_content"
+				       	android:layout_height="wrap_content"/>
+   					<TextView android:id="@+id/wednesdayLabel" 
+					    android:textSize="12sp"
+				       	android:textColor="@color/contactblocker_gray"
+				       	android:layout_width="wrap_content"
+				       	android:layout_height="wrap_content"/>
+					<TextView android:id="@+id/thursdayLabel" 
+					    android:textSize="12sp"
+				       	android:textColor="@color/contactblocker_gray"
+				       	android:layout_width="wrap_content"
+				       	android:layout_height="wrap_content"/>
+					<TextView android:id="@+id/fridayLabel" 
+					    android:textSize="12sp"
+				       	android:textColor="@color/contactblocker_gray"
+				       	android:layout_width="wrap_content"
+				       	android:layout_height="wrap_content"/>
+					<TextView android:id="@+id/saturdayLabel" 
+					    android:textSize="12sp"
+				       	android:textColor="@color/contactblocker_gray"
+				       	android:layout_width="wrap_content"
+				       	android:layout_height="wrap_content"/>
+					<TextView android:id="@+id/sundayLabel" 
+					    android:textSize="12sp"
+				       	android:textColor="@color/contactblocker_gray"
+				       	android:layout_width="wrap_content"
+				       	android:layout_height="wrap_content"/>					       	
+		       	</LinearLayout>
+		</RelativeLayout>
+
+	</TableRow>
+</TableLayout>

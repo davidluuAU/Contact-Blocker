@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient 
+        android:startColor="@color/contactblocker_light_red" 
+        android:endColor="@color/contactblocker_dark_red"
+        android:angle="270"
+     />
+     
+     <stroke
+     	android:width="2dp"
+     	android:color="@color/callblocker_sliding_drawer_handle_stroke"/>
+     
+</shape>

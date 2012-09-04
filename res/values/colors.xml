@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<color name="white">#FFFFFF</color>
+	<color name="black">#000000</color>
+	
+
+    <color name="contactblocker_gray">#A3A3A3</color>
+    <color name="contactblocker_dark_red">#8B1A1A</color>
+    <color name="contactblocker_light_red">#CD2626</color>
+    <color name="contactblocker_orange">#E48930</color>
+    <color name="callblocker_sliding_drawer_handle_stroke">#8B1A1A</color>
+    
+    <color name="contactblocker_btn_normal_start">#FFFFFF</color>
+    <color name="contactblocker_btn_normal_end">#B8B8B8</color>
+    <color name="contactblocker_btn_normal_stroke">#9f9f9f</color>
+    
+    <color name="contactblocker_btn_pressed_start">#FFD800</color>
+    <color name="contactblocker_btn_pressed_end">#FFA200</color>
+    <color name="contactblocker_btn_pressed_stroke">#9f9f9f</color>
+    
+    <color name="contactblocker_btn_selected_start">#FF9800</color>
+    <color name="contactblocker_btn_selected_end">#FF8000</color>
+    <color name="contactblocker_btn_selected_stroke">#9f9f9f</color>
+    
+</resources>

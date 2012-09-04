@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+	android:shape="rectangle">
+    <gradient 
+        android:startColor="@color/contactblocker_btn_pressed_start"
+        android:endColor="@color/contactblocker_btn_pressed_end"
+        android:angle="270"
+     />
+     <stroke
+        android:width="1px"
+        android:color="@color/contactblocker_btn_pressed_stroke" />
+        
+	<corners
+		android:radius="5dp"/>
+		
+	<padding
+        android:left="4dp"
+        android:top="11dp"
+        android:right="4dp"
+        android:bottom="11dp" />		
+</shape>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:background="@color/white"
+    >
+
+	<com.markupartist.android.widget.ActionBar
+	    android:id="@+id/actionbar"
+	    style="@style/ActionBar"
+	    />
+    
+    <!-- the cacheColorHint property is used to prevent things going black when scrolling -->
+    <ListView android:id="@+id/android:list"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_below="@id/actionbar"
+		android:paddingBottom="@dimen/sliding_drawer_height"
+		android:background="@color/white"
+       	android:textColor="@color/black"
+       	android:cacheColorHint="#00000000"
+        	/>
+  	<TextView android:id="@+id/android:empty"
+        android:layout_width="fill_parent"
+       	android:layout_height="fill_parent"
+       	android:layout_below="@id/actionbar"
+       	android:gravity="center_vertical|center_horizontal"
+       	android:textSize="26sp"
+       	android:background="@color/white"
+       	android:textColor="@color/black"
+       	android:text="@string/no_blocked_contacts"/>  
+
+	<SlidingDrawer android:id="@+id/slidingDrawer"
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:handle="@+id/handle"
+        android:content="@+id/content">
+			
+		<RelativeLayout 
+			android:id="@+id/handle"
+			android:layout_width="fill_parent"
+			android:layout_height="@dimen/sliding_drawer_height"
+			android:background="@drawable/contactblocker_sliding_drawer_background">
+		
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_centerInParent="true"
+				android:layout_centerVertical="true"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content">
+				<TextView
+					android:id="@+id/textNumNewNotifications"
+					android:layout_height="28dp"
+					android:layout_width="28dp"
+					android:layout_gravity="center_vertical|center_horizontal"
+					android:textSize="18sp"
+					android:textStyle="bold"
+					android:textColor="@color/white"
+					android:gravity="center_horizontal|center_vertical"
+					android:background="@drawable/contactblocker_notification_icon"/>
+			
+				<TextView 
+		        	android:id="@+id/handleText"
+		        	android:layout_height="wrap_content"
+					android:layout_width="wrap_content"
+					android:layout_gravity="center_vertical|center_horizontal"
+					android:layout_toRightOf="@id/textNumNewNotifications"
+					android:layout_marginLeft="6dp"
+					android:textSize="18sp"
+					android:text="@string/labelSlidingDrawerHandle"
+					android:textStyle="bold"
+					android:textColor="@color/white"
+					/>
+			</LinearLayout>
+					
+		</RelativeLayout>
+				
+		<RelativeLayout 
+			android:id="@+id/content"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:background="@color/white">
+		
+			<Button
+				android:id="@+id/contentButton"
+				android:layout_width="fill_parent"
+				android:layout_height="@dimen/sliding_drawer_height"
+				android:layout_alignParentBottom="true"
+				android:text="@string/labelClearHistory"
+				android:background="@drawable/contactblocker_btn"
+				android:padding="3pt"
+				android:layout_margin="@dimen/contactblocker_margin"
+				/>
+		
+			<ListView android:id="@+id/listBlockedCalls"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_above="@id/contentButton"
+				android:background="@color/white"
+				android:textColor="@color/black"
+				android:cacheColorHint="#00000000"/>
+	    
+		</RelativeLayout>	
+			
+	</SlidingDrawer>
+
+</RelativeLayout>

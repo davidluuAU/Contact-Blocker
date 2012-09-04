@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/blockedCallsRow"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:paddingLeft="2pt"
+		android:paddingTop="4pt"
+		android:paddingBottom="4pt"
+		android:paddingRight="1pt">
+				
+	<QuickContactBadge 
+		android:id="@+id/blockedContactBadge"
+		android:layout_width="@dimen/contact_badge_height"
+		android:layout_height="@dimen/contact_badge_height"
+		android:src="@drawable/icon_watermark"/>	
+		
+		
+	<TextView android:id="@+id/blockedNameLabel" 
+	    android:textSize="18sp"
+       	android:textColor="@color/black"
+       	android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"	
+       	android:layout_toRightOf="@id/blockedContactBadge"       	
+       	android:paddingLeft="@dimen/contactblocker_padding"
+       	android:paddingBottom="1pt"
+	    />
+
+	<TextView android:id="@+id/blockedNumberTitle" 
+	    android:textSize="12sp"
+       	android:textColor="@color/contactblocker_gray"
+       	android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+       	android:layout_below="@id/blockedNameLabel"
+       	android:layout_toRightOf="@id/blockedContactBadge" 
+       	android:textStyle="bold"
+       	android:paddingLeft="@dimen/contactblocker_padding"
+       	android:text="@string/labelNumber"/>
+	    
+	<TextView android:id="@+id/blockedNumberLabel" 
+	    android:textSize="12sp"
+       	android:textColor="@color/contactblocker_gray"
+       	android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+       	android:layout_below="@id/blockedNameLabel"
+       	android:layout_toRightOf="@id/blockedNumberTitle"
+       	android:paddingLeft="@dimen/contactblocker_padding"
+	    />
+	   
+	<TextView android:id="@+id/dateLabel" 
+	    android:textSize="12sp"
+       	android:textColor="@color/contactblocker_gray"
+       	android:layout_width="wrap_content"
+       	android:layout_height="wrap_content"
+       	android:layout_alignParentRight="true"
+       	android:layout_below="@id/blockedNameLabel"
+       	android:paddingLeft="@dimen/contactblocker_padding"
+       	android:paddingRight="@dimen/contactblocker_padding"
+	    />
+
+</RelativeLayout>

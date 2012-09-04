@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#ffffffff"
+  	android:textColor="#FF000000">
+
+	<com.markupartist.android.widget.ActionBar android:id="@+id/actionbar" style="@style/ActionBar"/>
+ 
+	<ScrollView
+		android:padding="2pt"
+		android:layout_below="@id/actionbar"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+	
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			
+			<TextView 
+				android:id="@+id/applicationTitle"
+				android:textColor="#FF000000"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingTop="2pt"
+				android:paddingBottom="2pt"
+				android:text="@string/app_name">
+			</TextView>
+		
+			<TextView 
+				android:id="@+id/applicationDescription"
+				android:textColor="#FF000000"
+				android:textSize="16sp"
+				android:layout_below="@id/applicationTitle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingBottom="2pt"
+				android:text="@string/applicationDescription">
+			</TextView>
+	
+			<TextView 
+				android:id="@+id/callblockerversion"
+				android:textColor="#FF000000"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:layout_below="@id/applicationDescription"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingTop="2pt"
+				android:paddingBottom="2pt"
+				android:text="@string/titleVersion">
+			</TextView>
+			<TextView 
+				android:id="@+id/version"
+				android:textColor="#FF000000"
+				android:textSize="16sp"
+				android:layout_below="@id/applicationDescription"
+				android:layout_toRightOf="@id/callblockerversion"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingTop="2pt"
+				android:paddingBottom="2pt"
+				android:text="@string/version">
+			</TextView>		
+	
+			<TextView 
+				android:id="@+id/support"
+				android:textColor="#FF000000"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:layout_below="@id/version"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingTop="2pt"
+				android:paddingBottom="2pt"
+				android:text="@string/titleSupport">
+			</TextView>
+			<TextView 
+				android:id="@+id/email"
+				android:textColor="#FF000000"
+				android:textSize="16sp"
+				android:layout_below="@id/support"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:autoLink="email"
+				android:paddingBottom="2pt"
+				android:text="@string/email">
+			</TextView>
+	
+			<TextView 
+				android:id="@+id/disclaimerTitle"
+				android:textColor="#FF000000"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:layout_below="@id/email"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingTop="2pt"
+				android:paddingBottom="2pt"
+				android:text="@string/titleDisclaimer">
+			</TextView>
+			<TextView 
+				android:id="@+id/disclaimerText"
+				android:textColor="#FF000000"
+				android:textSize="16sp"
+				android:layout_below="@id/disclaimerTitle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingBottom="2pt"
+				android:text="@string/disclaimerText">
+			</TextView>		
+			
+			<TextView 
+				android:id="@+id/copyRight"
+				android:textColor="#FF000000"
+				android:textSize="16sp"
+				android:textStyle="bold"
+				android:layout_below="@id/disclaimerText"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingTop="2pt"
+				android:paddingBottom="2pt"
+				android:text="@string/titleCopyright">
+			</TextView>
+			
+			<TextView 
+				android:id="@+id/copyRightText"
+				android:textColor="#FF000000"
+				android:textSize="16sp"
+				android:layout_below="@id/copyRight"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingBottom="2pt"
+				android:text="@string/copyRightText">
+			</TextView>
+
+	</RelativeLayout>
+	
+	</ScrollView>		
+
+</RelativeLayout>
