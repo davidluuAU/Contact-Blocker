@@ -40,7 +40,7 @@
  	<string name="days_of_week">Block calls on the following days:</string>
  	
  	
- 	<string name="email">thesouthisland@gmail.com</string>
+ 	<string name="email">blah@blah.com</string>
  	<string name="version">1.4.6</string>
  	<string name="applicationDescription">This application is used to block calls 
  	of people in your contact list. By adding contacts from your contact list to 
@@ -49,17 +49,9 @@
  	you wish to block these contacts.</string>
  	
  	<string name="disclaimerText">
- 	This application is provided \'as is\' and solely intended for personal use.
+ 	Disclaimer</string>
  	
- 	\n\nThe South Island shall use its best endeavor to guarantee the fitness of the software; however, it 
- 	makes no warranties for all failures encountered in using the software.
- 	
- 	\n\nThe South Island cannot guarantee the calls by any contact added to the block list will always be 
- 	blocked correctly, or that the application will correctly block intended contacts. The South Island 
- 	is not liable for any errors, incompleteness, or delays, or for any actions taken in reliance on 
- 	calls which are either blocked or not blocked by this application.</string>
- 	
- 	<string name="copyRightText">Copyright(C) 2010-2012 The South Island. All Rights Reserved.</string>
+ 	<string name="copyRightText">Copyright text</string>
  	
  	<string name="msgAlreadyBlocked">This contact has already been blocked</string>
  	<string name="msgEverydayUnchecked">No days have been selected</string>
